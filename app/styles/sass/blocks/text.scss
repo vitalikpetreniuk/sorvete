@@ -1,0 +1,10 @@
+.text {
+	&-nonedecoration {
+		a {
+			text-decoration: none;
+		}
+	}
+	&-uppercase {
+		text-transform: uppercase;
+	}
+}

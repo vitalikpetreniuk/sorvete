@@ -1,0 +1,40 @@
+.header {
+	padding: 35px 0 53px;
+	&__nav {
+		@include media-max(991) {
+			display: none;
+		}
+		ul {
+			@include font('Montserrat', 600, 12px);
+			margin: 0 20px;
+			list-style: none;
+			li {
+				word-break: break-word;
+				text-align: center;
+				&:not(:last-of-type) {
+					margin-right: 69px;
+					@include media-max(1199) {
+						margin-right: 30px;
+					}
+				}
+			}
+		}
+	}
+	&__btn {
+		@include media-max(991) {
+			display: none;
+		}
+		button {
+			padding: 0 46px 0 30px;
+			span {
+				font-size: 12px;
+				margin-left: 17px;
+			}
+		}
+	}
+	&__burger {
+		@include media-min(992) {
+			display: none;
+		}
+	}
+}

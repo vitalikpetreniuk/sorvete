@@ -1,3 +1,4 @@
+// Media
 @mixin media-min($w) {
 	@media (min-width: $w+'px') {
 		@content;
@@ -20,4 +21,12 @@
 	@media (max-height: $h+'px') {
 		@content;
 	}
+}
+
+
+// Font
+@mixin font($fname, $fweight, $fsize) {
+	font-family: $fname;
+	font-weight: $fweight;
+	font-size: $fsize;
 }
