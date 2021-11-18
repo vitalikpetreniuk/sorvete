@@ -1,0 +1,12 @@
+.burger {
+	display: flex;
+	flex-direction: column;
+	span {
+		height: 2px;
+		width: 30px;
+		background: #6c757d;
+		&:not(:last-of-type) {
+			margin-bottom: 6px;
+		}
+	}
+}

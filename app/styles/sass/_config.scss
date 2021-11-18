@@ -2,9 +2,9 @@
 
 $accent: orange; // Accent Color
 $fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
+$textcolor: #393939; // Text Color
 $lineheight: 1.65; // Document Line Height
-$userfont: roboto-oh5, sans-serif; // User Font Family
+$userfont: Montserrat, sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -13,23 +13,27 @@ $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
 
-@import "media";
+@import "mixins";
+@import "blocks/colors";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
 @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
-// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+//@import 'node_modules/bootstrap/scss/_utilities.scss'; // Optional Bootstrap Utilites
 
 // FONTS LOAD SECTION
 
-//@mixin font($fname, $fstyle, $fweight, $furl)
-//	@font-face
-//		font-family: $fname
-//		font-style: $fstyle
-//		font-weight: $fweight
-//		src: url($furl) format('woff2')
+//@mixin font($fname, $fweight) {
+//	@font-face {
+//		font-family: $fname;
+//		//font-size: $fsize;
+//		//font-style: $fstyle;
+//		font-weight: $fweight;
+//		//src: url($furl) format('woff2');
+//	}
+//}
 //
 //@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
 //@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
@@ -57,9 +61,16 @@ body {
 	overflow-x: hidden;
 }
 
-//.container {
-//	max-width: 1216px;
-//}
+a {
+	color: $textcolor;
+}
+img {
+	object-fit: cover;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
 
 @media (min-width: 1400px) {
 	.container {

@@ -1,0 +1,11 @@
+.icon {
+	&-phone {
+		vertical-align: middle;
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background: #FFFFFF;
+		-webkit-mask-image: url(../images/dist/icons/phone.svg);
+		mask-image: url(../images/dist/icons/phone.svg);
+	}
+}
