@@ -1,4 +1,8 @@
 .main-slider {
+	margin-bottom: 232px;
+	@include media-max(1199) {
+		margin-bottom: 70px;
+	}
 	&__element {
 		position: relative;
 		padding: 70px 0 88px 88px;

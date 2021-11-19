@@ -1,0 +1,12 @@
+.title {
+	font-family: Junegull, sans-serif;
+	font-size: 53px;
+	line-height: 90.5%;
+	text-transform: uppercase;
+	@include media-max(991) {
+		font-size: 36px;
+	}
+	@include media-max(575) {
+		font-size: 24px;
+	}
+}
