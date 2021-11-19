@@ -25,15 +25,15 @@ $gutter: $grid-gutter-width;
 
 // FONTS LOAD SECTION
 
-//@mixin font($fname, $fweight) {
-//	@font-face {
-//		font-family: $fname;
-//		//font-size: $fsize;
-//		//font-style: $fstyle;
-//		font-weight: $fweight;
-//		//src: url($furl) format('woff2');
-//	}
-//}
+@mixin addfont($fname, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-weight: $fweight;
+		src: url($furl) format('truetype');
+	}
+}
+
+@include addfont('Junegull', 400, '../fonts/junegull_rg.ttf');
 //
 //@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
 //@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
@@ -61,7 +61,11 @@ body {
 	overflow-x: hidden;
 }
 
-a {
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+a, a:hover {
 	color: $textcolor;
 }
 img {
@@ -70,6 +74,9 @@ img {
 ul {
 	margin: 0;
 	padding: 0;
+}
+p {
+	margin: 0;
 }
 
 @media (min-width: 1400px) {
