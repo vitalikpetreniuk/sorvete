@@ -1,8 +1,14 @@
 .btn-general {
+	display: flex;
+	align-items: center;
 	border: none;
 	border-radius: 11px;
 	background: $blueLight;
 	color: $white;
 	height: 54px;
 	font-weight: 800;
+	text-decoration: none;
+	&:hover {
+		color: $white;
+	}
 }

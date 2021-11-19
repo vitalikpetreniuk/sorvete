@@ -1,0 +1,224 @@
+.main-slider {
+	&__element {
+		position: relative;
+		padding: 70px 0 88px 88px;
+		height: 523px;
+		border-radius: 37px;
+		@include media-max(991) {
+			height: auto;
+			padding: 40px 0 40px 40px;
+		}
+		@include media-max(575) {
+			padding: 20px 20px 50px 20px;
+		}
+		& > div:first-of-type {
+			height: 100%	;
+		}
+		&.blue {
+			clip-path: inset( -100vw -100vw 0 0 );
+			background: linear-gradient(116.08deg, #699CFF 33.57%, #0CF0FF 110.62%);
+			.main-slider__image {
+				position: absolute;
+				top: -27%;
+				left: 23%;
+				@include media-max(1399) {
+					top: -25%;
+					left: 26%;
+				}
+				@include media-max(1199) {
+					left: 36%;
+					top: -5%;
+				}
+				@include media-max(767) {
+					left: 45%;
+					top: 11%;
+				}
+				img {
+					max-width: 1113px;
+					@include media-max(1399) {
+						max-width: 1000px;
+					}
+					@include media-max(1199) {
+						max-width: 730px;
+					}
+					@include media-max(991) {
+						max-width: 539px;
+					}
+					@include media-max(767) {
+						max-width: 343px;
+					}
+				}
+			}
+		}
+		&.pink {
+			background: linear-gradient(119.37deg, #FF7B94 32%, #FF5005 92.86%);
+			.main-slider__image {
+				position: absolute;
+				top: 6%;
+				left: 6.2%;
+				@include media-max(1399) {
+					top: 12%;
+					left: 10%;
+				}
+				@include media-max(1199) {
+					left: 23.7%;
+					top: 27%;
+				}
+				@include media-max(991) {
+					left: 21.9%;
+					top: 17%;
+				}
+				@include media-max(767) {
+					left: 44.6%;
+					top: 34%;
+				}
+				img {
+					max-width: 1113px;
+					@include media-max(1399) {
+						max-width: 1000px;
+					}
+					@include media-max(1199) {
+						max-width: 710px;
+					}
+					@include media-max(991) {
+						max-width: 539px;
+					}
+					@include media-max(767) {
+						max-width: 283px;
+					}
+				}
+			}
+		}
+		&.orange {
+			background: linear-gradient(111.92deg, #FF7E21 22.31%, #FFD80C 93.13%);
+			.main-slider__image {
+				left: 44.2%;
+				position: absolute;
+				top: -15%;
+				@include media-max(1399) {
+					left: 45%;
+					top: -9%;
+				}
+				@include media-max(1199) {
+					left: 50%;
+					top: 3%;
+				}
+				@include media-max(991) {
+					left: 47%;
+					top: -9%;
+				}
+				@include media-max(767) {
+					left: 63%;
+					top: 21%;
+				}
+				img {
+					max-width: 760px;
+					@include media-max(1399) {
+						max-width: 710px;
+					}
+					@include media-max(1199) {
+						max-width: 550px;
+					}
+					@include media-max(991) {
+						max-width: 428px;
+					}
+					@include media-max(767) {
+						max-width: 220px;
+					}
+				}
+			}
+		}
+	}
+	&__image {
+		@include media-max(575) {
+			display: none;
+		}
+	}
+	&__logo {
+		@include media-max(991) {
+			margin-bottom: 60px;
+		}
+	}
+	&__text {
+		@include media-max(575) {
+			text-align: center;
+			word-break: break-word;
+		}
+		h2 {
+			font-size: 66px;
+			color: #FFFFFF;
+			text-transform: uppercase;
+			font-family: 'Junegull', sans-serif;
+			line-height: 90%;
+			max-width: 380px;
+			min-height: 120px;
+			@include media-max(991) {
+				font-size: 44px;
+				max-width: 270px;
+			}
+			@include media-max(575) {
+				font-size: 30px;
+				max-width: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		p {
+			font-family: Montserrat, sans-serif;
+			font-size: 14px;
+			font-weight: 500;
+			color: #FFFFFF;
+			margin-top: 26px;
+			@include media-max(575) {
+				min-height: 46px;
+			}
+		}
+	}
+	.slick-list {
+		overflow: visible;
+		margin: 0 -26px;
+	}
+	.slick-slide {
+		padding: 0 26px;
+	}
+	.slick-dots {
+		bottom: 23px;
+		left: 50%;
+		transform: translate(-50%);
+		li {
+			margin: 0;
+			width: 16px;
+			height: 16px;
+			&:not(:last-of-type) {
+				margin-right: 5px;
+				@include media-max(575) {
+					margin-right: 0;
+				}
+			}
+			button {
+				padding: 0;
+				margin: 0;
+				width: 16px;
+				height: 16px;
+				background: #FFFFFF;
+				border-radius: 50px;
+				display: inline-block;
+				border: 5px solid #FFFFFF;
+				@include media-max(575) {
+					border: 2px solid #FFFFFF;
+					width: 10px;
+					height: 10px;
+				}
+				&::before {
+					display: none;
+				}
+			}
+			&.slick-active {
+				button {
+					background: transparent;
+				}
+			}
+		}
+	}
+}
