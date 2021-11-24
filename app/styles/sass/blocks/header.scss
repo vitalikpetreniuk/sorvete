@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 35px 0 53px;
+	padding: 25px 0 20px;
 	@include media-max(991) {
 		padding: 20px 0 20px;
 	}
@@ -96,13 +96,21 @@
 	}
 	&__btn {
 		@include media-max(991) {
-			display: none;
+			margin-left: auto;
+			margin-right: 20px;
 		}
 		button, a {
 			padding: 0 46px 0 30px;
+			@include media-max(575) {
+				padding: 20px;
+				border-radius: 50%;
+			}
 			span {
 				font-size: 12px;
 				margin-left: 17px;
+				@include media-max(575) {
+					display: none;
+				}
 			}
 		}
 	}
