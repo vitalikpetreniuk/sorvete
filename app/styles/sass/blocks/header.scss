@@ -6,6 +6,9 @@
 	left: 0;
 	width: 100%;
 	padding: 35px 0 53px;
+	@include media-max(991) {
+		padding: 20px 0 20px;
+	}
 	.logo {
 		width: 128px;
 		height: 57px;
