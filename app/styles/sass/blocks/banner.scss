@@ -1,0 +1,11 @@
+.banner {
+	margin: 248px auto 144px auto;
+	max-width: 1376px;
+	width: 100%;
+	@include media-max(991) {
+		margin: 50px auto 50px auto;
+	}
+	img {
+		width: 100%;
+	}
+}

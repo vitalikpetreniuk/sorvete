@@ -11,8 +11,67 @@ document.addEventListener('DOMContentLoaded', () => {
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 5000,
+		autoplay: true,
+		autoplaySpeed: 4000,
+	})
+	$('.info__slider').slick({
+		infinite: false,
+		slidesToShow: 1,
+	})
+	$('.products__slider').slick({
+		slidesToShow: 4,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	})
 
+	function checkWidth () {
+		const windowWidth = $('body').innerWidth(),
+			headerNav = $('.header__nav')
+
+		if(windowWidth <= 991) {
+			headerNav.addClass('mobile-nav')
+		}
+		else {
+			headerNav.removeClass('mobile-nav')
+		}
+	}
+
+	checkWidth();
+
+	$(window).resize(() => {
+		checkWidth();
+	})
+	
+	$('.header__burger, .header__nav .close-menu, .mobile-nav ul li').on('click', () => {
+		$('.header__nav').toggleClass('active')
+		$('body').toggleClass('_over-hidden')
+	})
+	
+
+	$('a[href^="#"]').click(function(){ 
+		let anchor = $(this).attr('href');  
+		$('html, body').animate({           
+			scrollTop:  $(anchor).offset().top - 160
+		}, 10);                           
+	});
+	
 })

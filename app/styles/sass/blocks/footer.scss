@@ -1,0 +1,80 @@
+.footer {
+	margin-top: 440px;
+	background: #e6f4ff;
+	height: 270px;
+	padding-bottom: 50px;
+	@include media-max(575) {
+		padding-top: 35px;
+		padding-bottom: 35px;
+		margin-top: 0;
+		height: auto;
+	}
+	&__container {
+		padding: 0;
+		@include media-max(575) {
+			flex-direction: column;
+		}
+	}
+	&__copyright {
+		font-size: 11px;
+		opacity: 0.5;
+		@include media-max(991) {
+			margin-left: 20px;
+		}
+		@include media-max(575) {
+			order: 2;
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	&__nav {
+		@include media-max(991) {
+			//display: none;
+		}
+		ul {
+			@include font('Montserrat', 600, 12px);
+			flex-wrap: wrap;
+			margin: 0 20px;
+			list-style: none;
+			@include media-max(575) {
+				flex-direction: column;
+				margin: 15px 0;
+			}
+			li {
+				word-break: break-word;
+				text-align: center;
+				a {
+					font-weight: 700;
+					color: #393939;
+					opacity: 0.5;
+				}
+				&:not(:last-of-type) {
+					margin-right: 36px;
+					@include media-max(1199) {
+						margin-right: 30px;
+					}
+					@include media-max(575) {
+						margin: 5px 0;
+					}
+				}
+			}
+		}
+	}
+	&__btn {
+		@include media-max(1199) {
+			display: none;
+		}
+		button, a {
+			padding: 0 46px 0 30px;
+			span {
+				font-size: 12px;
+				margin-left: 17px;
+			}
+		}
+	}
+	&__burger {
+		@include media-min(992) {
+			display: none;
+		}
+	}
+}

@@ -16,7 +16,7 @@ $gutter: $grid-gutter-width;
 @import "mixins";
 @import "blocks/colors";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
@@ -33,12 +33,17 @@ $gutter: $grid-gutter-width;
 	}
 }
 
+@mixin addfontwoff2($fname, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+	}
+}
+
 @include addfont('Junegull', 400, '../fonts/junegull_rg.ttf');
-//
-//@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-//@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-//@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-//@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include addfontwoff2('Gilroy', 400, '../fonts/gilroy-regular.woff2');
+@include addfontwoff2('Gilroy', 700, '../fonts/gilroy-bold.woff2');
 
 // GENERAL CSS SETTINGS
 
@@ -59,6 +64,8 @@ body {
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
+	padding-top: 145px;
+	background: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,6 +84,10 @@ ul {
 }
 p {
 	margin: 0;
+}
+
+._over-hidden {
+	overflow: hidden;
 }
 
 @media (min-width: 1400px) {

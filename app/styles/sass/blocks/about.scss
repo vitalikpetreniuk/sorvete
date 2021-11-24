@@ -1,4 +1,8 @@
 .about {
+	margin-bottom: 150px;
+	@include media-max(991) {
+		margin-bottom: 53px;
+	}
 	&__container {
 		& > div:first-of-type {
 			margin-bottom: 91px;

@@ -4,8 +4,116 @@
 		display: inline-block;
 		width: 18px;
 		height: 18px;
-		background: #FFFFFF;
+		background: #FFFFFF no-repeat;
 		-webkit-mask-image: url(../images/dist/icons/phone.svg);
 		mask-image: url(../images/dist/icons/phone.svg);
+	}
+	&-arrow {
+		vertical-align: middle;
+		display: inline-block;
+		width: 36px;
+		height: 31px;
+		background: #FFFFFF no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/arrow.svg);
+		mask-image: url(../images/dist/icons/arrow.svg);
+	}
+	&-fruits {
+		vertical-align: middle;
+		display: inline-block;
+		width: 69px;
+		height: 69px;
+		background: #00BAE2 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/fruits.svg);
+		mask-image: url(../images/dist/icons/fruits.svg);
+	}
+	&-oil {
+		vertical-align: middle;
+		display: inline-block;
+		width: 66px;
+		height: 66px;
+		background: #FFAA05 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/oil.svg);
+		mask-image: url(../images/dist/icons/oil.svg);
+	}
+	&-sugar {
+		vertical-align: middle;
+		display: inline-block;
+		width: 69px;
+		height: 69px;
+		background: #11AB44 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/sugar.svg);
+		mask-image: url(../images/dist/icons/sugar.svg);
+	}
+	&-milk {
+		vertical-align: middle;
+		display: inline-block;
+		width: 68px;
+		height: 68px;
+		background: #7954CE no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/milk.svg);
+		mask-image: url(../images/dist/icons/milk.svg);
+	}
+	&-water {
+		vertical-align: middle;
+		display: inline-block;
+		width: 72px;
+		height: 72px;
+		background: #00BAE2 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/water.svg);
+		mask-image: url(../images/dist/icons/water.svg);
+	}
+	&-lemon {
+		vertical-align: middle;
+		display: inline-block;
+		width: 63px;
+		height: 63px;
+		background: #FFAA05 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/lemon.svg);
+		mask-image: url(../images/dist/icons/lemon.svg);
+	}
+	&-vanil {
+		vertical-align: middle;
+		display: inline-block;
+		min-width: 37px;
+		height: 37px;
+		background: #FFDE4F no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/vanil.svg);
+		mask-image: url(../images/dist/icons/vanil.svg);
+	}
+	&-arahis {
+		vertical-align: middle;
+		display: inline-block;
+		min-width: 34px;
+		height: 34px;
+		background: #F18200 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/arahis.svg);
+		mask-image: url(../images/dist/icons/arahis.svg);
+	}
+	&-coconut {
+		vertical-align: middle;
+		display: inline-block;
+		min-width: 43px;
+		height: 43px;
+		background: #18D3D3 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/cocount.svg);
+		mask-image: url(../images/dist/icons/cocount.svg); 
+	}
+	&-chocolate {
+		vertical-align: middle;
+		display: inline-block;
+		min-width: 45px;
+		height: 45px;
+		background: #8D5D43 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/chocolate.svg);
+		mask-image: url(../images/dist/icons/chocolate.svg);
+	}
+	&-strawberry {
+		vertical-align: middle;
+		display: inline-block;
+		min-width: 26px;
+		height: 34px;
+		background: #FF0532 no-repeat;
+		-webkit-mask-image: url(../images/dist/icons/strawberry.svg);
+		mask-image: url(../images/dist/icons/strawberry.svg);
 	}
 }

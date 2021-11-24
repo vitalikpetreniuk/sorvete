@@ -7,32 +7,36 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+		<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
 		<link rel="stylesheet" href="css/app.min.css">
-		<title>Document</title>
+		<title>Sorvete</title>
 	</head>
 	<body>
 		<header class="header">
 			<div class="container d-flex align-items-center justify-content-between">
 				<div class="logo">
-					<a href="#">
+					<a href="/">
 						<img src="images/dist/logo.svg" alt="logo">
 					</a>
 				</div>
 				<nav class="header__nav">
 					<ul class="text-nonedecoration text-uppercase d-flex align-items-center">
 						<li>
-							<a href="#">О производителе</a>
+							<a href="#about">О производителе</a>
 						</li>
 						<li>
-							<a href="#">производство</a>
+							<a href="#info">производство</a>
 						</li>
 						<li>
-							<a href="#">состав</a>
+							<a href="#composition">состав</a>
 						</li>
 						<li>
-							<a href="#">ассортимент</a>
+							<a href="#products">ассортимент</a>
 						</li>
 					</ul>
+					<div class="close-menu">
+						<img src="images/dist/icons/icon-close.svg" alt="close">
+					</div>
 				</nav>
 				<div class="header__btn">
 					<button class="btn-general">
@@ -93,7 +97,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="about">
+		<div id="about" class="about">
 			<div class="about__container container">
 				<div class="d-flex align-items-center justify-content-between">
 					<h3 class="about__title title">
@@ -135,7 +139,247 @@
 				</ul>
 			</div>
 		</div>
-		<footer></footer>
+		<div id="info" class="info d-flex">
+			<div class="info__slider">
+				<img src="images/dist/content/fabric.jpg" alt="fabric">
+				<img src="images/dist/content/ice-cream.jpg" alt="ice-cream">
+				<img src="images/dist/content/ice-cream2.jpg" alt="ice-cream">
+			</div>
+			<div class="d-flex flex-column justify-content-between">
+				<div>
+					<h3 class="info__title title">Только  натуральное мороженое  может быть вкусным</h3>
+					<p class="info__text">Продукция производится из натуральных ингредиентов, без использования химических добавок, заменителей, усилителей вкуса или ГМО.</p>
+				</div>
+				<a href="#" class="info__btn btn-general">
+					<span>Наши продукты</span>
+					<i class="icon-arrow"></i>
+				</a>
+			</div>
+		</div>
+		<div id="composition" class="composition">
+			<div class="container">
+				<h3 class="composition__title title">
+					Что входит <br> в наше мороженое
+				</h3>
+				<div class="row justify-content-center">
+					<div class="col-6 col-xl-2 col-md-4 d-flex justify-content-center">
+						<div class="composition__element">
+							<i class="icon-fruits"></i>
+							<span class="d-flex align-items-end">Замороженые фрукты</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-2 col-md-4 d-flex justify-content-center">
+						<div class="composition__element">
+							<i class="icon-oil"></i>
+							<span class="d-flex align-items-end">Сливочное масло</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-2 col-md-4 d-flex justify-content-center">
+						<div class="composition__element">
+							<i class="icon-sugar"></i>
+							<span class="d-flex align-items-end">Сахар-песок</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-2 col-md-4 d-flex justify-content-center">
+						<div class="composition__element">
+							<i class="icon-milk"></i>
+							<span class="d-flex align-items-end">Сухое молоко</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-2 col-md-4 d-flex justify-content-center">
+						<div class="composition__element">
+							<i class="icon-water mb-25"></i>
+							<span class="d-flex align-items-end">Вода питьевая</span>
+						</div>
+					</div>
+					<div class="col-6 col-xl-2 col-md-4 d-flex justify-content-center">
+						<div class="composition__element">
+							<i class="icon-lemon"></i>
+							<span class="d-flex align-items-end">Лимонная кислота</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="images/dist/banners/babl-gum.png" alt="">
+		</div>
+		<div id="products" class="products">
+			<div class="products__container container">
+				<div class="d-flex align-items-center">
+					<span class="products__title title">Мороженое 350г</span>
+					<div class="title__label-blue d-flex align-items-center justify-content-center">12%</div>
+				</div>
+				<div class="products__slider">
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-plombir.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-vanil"></i>
+							<span>Мороженое пломбир с ароматом ванили</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-chocolate.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-arahis"></i>
+							<span>Пломбир соленая карамель с арахисом</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-coconut.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-coconut"></i>
+							<span>Пломбир кокос и кокосовая стружка</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-chocolate.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-chocolate"></i>
+							<span>Мороженое шоколадный пломбир</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-plombir.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-vanil"></i>
+							<span>Мороженое пломбир с ароматом ванили</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="products">
+			<div class="products__container container">
+				<div class="d-flex align-items-center">
+					<span class="products__title title">Мороженое 1400г</span>
+					<div class="title__label-green d-flex align-items-center justify-content-center">8%</div>
+				</div>
+				<div class="products__slider">
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-plombir-1400.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-vanil"></i>
+							<span>Мороженое пломбир с ароматом ванили</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-arahis-1400.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-arahis"></i>
+							<span>Пломбир соленая карамель с арахисом</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-coconut-1400.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-coconut"></i>
+							<span>Пломбир кокос и кокосовая стружка</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-chocolate-1400.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-chocolate"></i>
+							<span>Мороженое шоколадный пломбир</span>
+						</div>
+					</div>
+					<div class="products__element d-flex flex-column justify-content-center">
+						<img src="images/dist/content/products/ice-cream-plombir-1400.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-vanil"></i>
+							<span>Мороженое пломбир с ароматом ванили</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="products">
+			<div class="products__container container">
+				<div class="d-flex align-items-center">
+					<span class="products__title title">Мороженое 3000г</span>
+					<div class="title__label-orange d-flex align-items-center justify-content-center">5%</div>
+				</div>
+				<div class="products__slider">
+					<div class="products__element padding-top width-250 d-flex flex-column justify-content-center align-items-center">
+						<img src="images/dist/content/products/ice-cream-plombir-3000.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-vanil"></i>
+							<span>Молочное мороженое с ароматом ванили</span>
+						</div>
+					</div>
+					<div class="products__element padding-top width-250 d-flex flex-column justify-content-center align-items-center">
+						<img src="images/dist/content/products/ice-cream-strawberry-3000.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-strawberry"></i>
+							<span>Молочное мороженое с ароматом клубники</span>
+						</div>
+					</div>
+					<div class="products__element padding-top width-250 d-flex flex-column justify-content-center align-items-center">
+						<img src="images/dist/content/products/ice-cream-chocolate-3000.png" alt="">
+						<div class="products__element-info d-flex justify-content-center align-items-center">
+							<i class="icon-chocolate"></i>
+							<span>Молочное мороженое с шоколадом</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form">
+			<div class="form__container container">
+				<div class="form__banner d-flex justify-content-between align-items-center">
+					<img src="images/dist/banners/part-chocolate.png" class="part-chocolate" alt="chocolate">
+					<img src="images/dist/banners/lolipop.png" class="lolipop" alt="lolipop">
+					<img src="images/dist/banners/melloy1.png" class="melloy1" alt="melloy">
+					<img src="images/dist/banners/melloy2.png" class="melloy2" alt="melloy">
+					<div class="form__text">
+						<p>
+							Есть вопросы или необходима консультация нашего специалиста?
+						</p>
+						<span>Заполните форму и мы сами вам перезвоним!</span>
+					</div>
+					<form class="d-flex flex-column" action="">
+						<input class="input-field" type="text" placeholder="Ваше имя">
+						<input class="input-field phone-mask" type="text" placeholder="+7 ___ ___‒__‒__">
+						<button class="btn-general justify-content-center" type="submit">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer d-flex align-items-end">
+			<div class="footer__container container d-flex align-items-center justify-content-between">
+				<div class="logo">
+					<a href="/">
+						<img src="images/dist/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="footer__copyright">
+					© 2019 Soft and sweet <br> Политика конфиденциальности
+				</div>
+				<nav class="footer__nav">
+					<ul class="text-nonedecoration text-uppercase d-flex align-items-center">
+						<li>
+							<a href="#about">О производителе</a>
+						</li>
+						<li>
+							<a href="#info">производство</a>
+						</li>
+						<li>
+							<a href="#composition">состав</a>
+						</li>
+						<li>
+							<a href="#products">ассортимент</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__btn">
+					<button class="btn-general">
+						<i class="icon-phone"></i>
+						<span class="text-uppercase">заказать звонок</span>
+					</button>
+				</div>
+			</div>
+		</footer>
 	
 		<script src="js/app.min.js"></script>
 	</body>

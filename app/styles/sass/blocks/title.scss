@@ -3,10 +3,20 @@
 	font-size: 53px;
 	line-height: 90.5%;
 	text-transform: uppercase;
+	color: #2E2E2E;
 	@include media-max(991) {
 		font-size: 36px;
 	}
 	@include media-max(575) {
 		font-size: 24px;
+	}
+	&__label-blue {
+		background: #00BAE2;
+	}
+	&__label-green {
+		background: #11AB44;
+	}
+	&__label-orange {
+		background: #FFAA05;
 	}
 }

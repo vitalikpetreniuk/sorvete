@@ -1,0 +1,13 @@
+.input-field {
+	padding: 0 36px;
+	font-family: Gilroy, sans-serif;
+	background: #FFFFFF;
+	border-radius: 14px;
+	border: none;
+	height: 54px;
+	width: 347px;
+	outline: none;
+	@include media-max(1399) {
+		width: 280px;
+	}
+}
