@@ -11,7 +11,7 @@
 	opacity: 0;
 	transition: .4s;
 	min-height: 50vh;
-	@include media-max-h(1000) {
+	@include media-max-h(700) {
 		height: 82vh;
 		overflow-y: auto;
 	}
