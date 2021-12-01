@@ -74,4 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, 10);                           
 	});
 	
+	$('.header__btn, .popup__close').click(() => {
+		$('.popup, .bg-modal').toggleClass('active')
+		$('body').toggleClass('_over-hidden')
+	})
+	
+	$('.products__element, .modal__close').click(() => {
+		$('.modal, .bg-modal').toggleClass('active')
+		$('body').toggleClass('_over-hidden')
+	})
+	
+	$('.bg-modal').click(() => {
+		$('.modal, .popup, .bg-modal').removeClass('active')
+		$('body').removeClass('_over-hidden')
+	})
+	
 })
