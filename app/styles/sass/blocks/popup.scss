@@ -1,6 +1,6 @@
 .popup {
 	background: linear-gradient(111.92deg, rgb(255, 126, 33) 22.31%, rgb(255, 216, 12) 93.13%);
-	max-width: 1000px;
+	max-width: 480px;
 	width: 100%;
 	position: fixed;
 	top: 50%;
@@ -49,11 +49,9 @@
 			transition: .4s;
 		}
 	}
-	@include media-max(1199) {
-		width: 90%;
-		max-width: none;
-	}
 	@include media-max(575) {
 		padding: 60px 30px;
+		width: 90%;
+		max-width: none;
 	}
 }

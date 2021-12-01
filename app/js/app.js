@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, 10);                           
 	});
 	
-	$('.header__btn, .popup__close').click(() => {
+	$('.header__btn, .footer__btn, .popup__close').click(() => {
 		$('.popup, .bg-modal').toggleClass('active')
 		$('body').toggleClass('_over-hidden')
 	})
