@@ -3,6 +3,7 @@
 
 import "slick-carousel";
 import "jquery-mask-plugin";
+import "jquery-validation"
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -74,6 +75,48 @@ document.addEventListener('DOMContentLoaded', () => {
 			scrollTop:  $(anchor).offset().top - 160
 		}, 10);                           
 	});
+
+	$('#form-popup').validate({
+		rules:{
+			name:{
+				required: true,
+			},
+			phone:{
+				required: true,
+				minlength: 16,
+			},
+		},
+		messages:{
+			name:{
+				required: "Введите ваше имя",
+			},
+			phone:{
+				required: "Это поле обязательно для заполнения",
+				minlength: "Введите корректный номер",
+			},
+		}
+	})
+
+	$('#form-banner').validate({
+		rules:{
+			name2:{
+				required: true,
+			},
+			phone2:{
+				required: true,
+				minlength: 16,
+			},
+		},
+		messages:{
+			name2:{
+				required: "Введите ваше имя",
+			},
+			phone2:{
+				required: "Это поле обязательно для заполнения",
+				minlength: "Введите корректный номер",
+			},
+		}
+	})
 	
 	$('.header__btn, .footer__btn, #popup-form .popup__close').click(() => {
 		$('#popup-form, .bg-modal').toggleClass('active')
@@ -89,13 +132,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.modal, .popup, .bg-modal').removeClass('active')
 		$('body').removeClass('_over-hidden')
 	})
-	
+
 	$('#popup-form button').click((e) => {
 		e.preventDefault()
-		$('#popup-form').removeClass('active')
-		$('#popup-success').toggleClass('active')
+		if ($('#form-popup').valid()) {
+			$('#popup-form').removeClass('active')
+			$('#popup-success').toggleClass('active')
+		}
 	})
-	
+
 	$('#popup-success .popup__close').click(() => {
 		$('#popup-success').removeClass('active')
 		$('body').removeClass('_over-hidden')
@@ -104,9 +149,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	$('.form .btn-general').click((e) => {
 		e.preventDefault()
-		$('#popup-success').toggleClass('active')
-		$('.bg-modal').toggleClass('active')
-		$('body').toggleClass('_over-hidden')
+		if ($('#form-banner').valid()) {
+			$('#popup-success').toggleClass('active')
+			$('.bg-modal').toggleClass('active')
+			$('body').toggleClass('_over-hidden')
+		}
 	})
 
 	$("#phone").mask("+7 999 999‒99‒99");

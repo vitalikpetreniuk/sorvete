@@ -24,6 +24,15 @@
 				display: none;
 			}
 		}
+		.telephone {
+			margin-top: 15px;
+			a {
+				color: #FFFFFF;
+			}
+			@include media-min(451) {
+				display: none !important;
+			}
+		}
 		ul {
 			@include font('Montserrat', 600, 12px);
 			margin: 0 20px;
@@ -122,6 +131,30 @@
 				display: none;
 				@include media-max(575) {
 					display: none;
+				}
+			}
+		}
+	}
+	&__phone {
+		position: relative;
+		@include media-max(991) {
+			margin-left: auto;
+		}
+		@include media-max(450) {
+			display: none !important;
+		}
+		a {
+			&:hover {
+				color: #2dcdff;
+			}
+			&:last-of-type {
+				display: none;
+			}
+		}
+		&:hover {
+			a {
+				&:last-of-type {
+					display: block;
 				}
 			}
 		}

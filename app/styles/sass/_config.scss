@@ -90,6 +90,12 @@ p {
 	overflow: hidden;
 }
 
+.error {
+	color: #790202;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
 @media (min-width: 1400px) {
 	.container {
 		max-width: 1216px;

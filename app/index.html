@@ -24,9 +24,9 @@
 						<li>
 							<a href="#about">О производителе</a>
 						</li>
-						<li>
-							<a href="#info">производство</a>
-						</li>
+<!--						<li>-->
+<!--							<a href="#info">производство</a>-->
+<!--						</li>-->
 						<li>
 							<a href="#composition">состав</a>
 						</li>
@@ -35,10 +35,18 @@
 						</li>
 					</ul>
 					<div class="address">г.Новосибирск, Станционная 2-я, 30</div>
+					<div class="telephone d-flex flex-column align-items-center">
+						<a href="tel:8-800-777-62-48">8-800-777-62-48</a>
+						<a href="tel:+7(383)255-50-55">+7(383)255-50-55</a>
+					</div>
 					<div class="close-menu">
 						<img src="images/dist/icons/icon-close.svg" alt="close">
 					</div>
 				</nav>
+				<div class="header__phone d-flex flex-column">
+					<a href="tel:8-800-777-62-48">8-800-777-62-48</a>
+					<a href="tel:+7(383)255-50-55">+7(383)255-50-55</a>
+				</div>
 				<div class="header__btn">
 					<button class="btn-general">
 						<i class="icon-phone"></i>
@@ -344,9 +352,9 @@
 						</p>
 						<span>Заполните форму и мы сами вам перезвоним!</span>
 					</div>
-					<form class="d-flex flex-column" action="">
-						<input class="input-field" type="text" placeholder="Ваше имя">
-						<input id="phone" class="input-field phone-mask" type="tel" placeholder="+7 ___ ___‒__‒__">
+					<form id="form-banner" class="d-flex flex-column" action="">
+						<input class="input-field" type="text" placeholder="Ваше имя" name="name2">
+						<input id="phone" class="input-field phone-mask" type="tel" placeholder="+7 ___ ___‒__‒__" name="phone2">
 						<button class="btn-general justify-content-center" type="submit">Заказать звонок</button>
 					</form>
 				</div>
@@ -387,10 +395,10 @@
 			</div>
 		</footer>
 		<div id="popup-form" class="popup">
-			<form action="">
+			<form id="form-popup" action="">
 				<div class="popup__fields d-flex flex-column">
-					<input class="input-field" type="text" placeholder="Ваше имя">
-					<input id="phone2" class="input-field" type="text" placeholder="+7 ___ ___‒__‒__">
+					<input class="input-field" type="text" placeholder="Ваше имя" name="name">
+					<input id="phone2" class="input-field" type="text" placeholder="+7 ___ ___‒__‒__" name="phone">
 				</div>
 				<button type="submit" class="btn-general">заказать звонок</button>
 			</form>
