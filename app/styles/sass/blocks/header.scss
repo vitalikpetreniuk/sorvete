@@ -14,6 +14,16 @@
 		height: 57px;
 	}
 	&__nav {
+		.address {
+			padding: 0 60px;
+			font-size: 14px;
+			margin-top: 20px;
+			text-align: center;
+			color: #FFFFFF;
+			@include media-min(992) {
+				display: none;
+			}
+		}
 		ul {
 			@include font('Montserrat', 600, 12px);
 			margin: 0 20px;
@@ -100,7 +110,8 @@
 			margin-right: 20px;
 		}
 		button, a {
-			padding: 0 46px 0 30px;
+			padding: 20px;
+			border-radius: 50%;
 			@include media-max(575) {
 				padding: 20px;
 				border-radius: 50%;
@@ -108,10 +119,18 @@
 			span {
 				font-size: 12px;
 				margin-left: 17px;
+				display: none;
 				@include media-max(575) {
 					display: none;
 				}
 			}
+		}
+	}
+	&__adress {
+		font-size: 14px;
+		max-width: 170px;
+		@include media-max(991) {
+			display: none;
 		}
 	}
 	&__burger {

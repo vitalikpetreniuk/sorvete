@@ -11,6 +11,11 @@
 	opacity: 0;
 	transition: .4s;
 	min-height: 50vh;
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
 	@include media-max-h(700) {
 		height: 82vh;
 		overflow-y: auto;
@@ -173,17 +178,23 @@
 		}
 	}
 	&__close {
-		position: absolute;
-		right: 30px;
-		top: 25px;
+		height: fit-content;
+		position: sticky;
+		top: 0;
 		cursor: pointer;
-		transition: .4s;
+		transform: translate(20px, -40px);
+		@include media-max(1700) {
+			transform: translate(0px,-10px);
+		}
 		&:hover {
-			transform: rotate(-90deg);
+			img {
+				transform: rotate(-90deg);
+			}
 		}
 		img {
 			width: 25px;
 			height: 25px;
+			transition: .4s;
 		}
 	}
 }

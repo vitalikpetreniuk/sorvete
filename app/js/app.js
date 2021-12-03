@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, 10);                           
 	});
 	
-	$('.header__btn, .footer__btn, .popup__close').click(() => {
-		$('.popup, .bg-modal').toggleClass('active')
+	$('.header__btn, .footer__btn, #popup-form .popup__close').click(() => {
+		$('#popup-form, .bg-modal').toggleClass('active')
 		$('body').toggleClass('_over-hidden')
 	})
 	
@@ -88,6 +88,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	$('.bg-modal').click(() => {
 		$('.modal, .popup, .bg-modal').removeClass('active')
 		$('body').removeClass('_over-hidden')
+	})
+	
+	$('#popup-form button').click((e) => {
+		e.preventDefault()
+		$('#popup-form').removeClass('active')
+		$('#popup-success').toggleClass('active')
+	})
+	
+	$('#popup-success .popup__close').click(() => {
+		$('#popup-success').removeClass('active')
+		$('body').removeClass('_over-hidden')
+		$('.bg-modal').removeClass('active')
+	})
+	
+	$('.form .btn-general').click((e) => {
+		e.preventDefault()
+		$('#popup-success').toggleClass('active')
+		$('.bg-modal').toggleClass('active')
+		$('body').toggleClass('_over-hidden')
 	})
 
 	$("#phone").mask("+7 999 999‒99‒99");
