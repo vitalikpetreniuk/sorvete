@@ -2,6 +2,7 @@
 // import '~/app/libs/mmenu/dist/mmenu.js'
 
 import "slick-carousel";
+import "jquery-mask-plugin";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -88,5 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('.modal, .popup, .bg-modal').removeClass('active')
 		$('body').removeClass('_over-hidden')
 	})
+
+	$("#phone").mask("+7 999 999‒99‒99");
+	$("#phone2").mask("+7 999 999‒99‒99");
 	
 })
