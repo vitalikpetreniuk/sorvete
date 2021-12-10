@@ -122,11 +122,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		$('#popup-form, .bg-modal').toggleClass('active')
 		$('body').toggleClass('_over-hidden')
 	})
-	
-	$('.products__element, .modal__close').click(() => {
-		$('.modal, .bg-modal').toggleClass('active')
-		$('body').toggleClass('_over-hidden')
+
+
+	$('.products__element').click(function(event) {
+		event.preventDefault()
+		event.stopPropagation()
+		let popup_id = $('#' + $(this).attr("rel"));
+		$(popup_id).addClass("active");
+		$('body').addClass("_over-hidden");
+		$('.bg-modal').addClass('active')
+		console.log(popup_id)
+		$('.modal__close, .bg-modal').on('click', function (e){
+			$(".modal").removeClass("active");
+			$("body").removeClass("_over-hidden");
+			$('.bg-modal').removeClass('active')
+		})
 	})
+	
+	
 	
 	$('.bg-modal').click(() => {
 		$('.modal, .popup, .bg-modal').removeClass('active')
