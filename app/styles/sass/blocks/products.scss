@@ -23,6 +23,7 @@
 	}
 	&__title {}
 	&__slider {
+		z-index: 1;
 		margin-top: 85px;
 		@include media-max(991) {
 			margin-top: 55px;
