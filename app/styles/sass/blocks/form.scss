@@ -1,7 +1,7 @@
 .form {
 	position: absolute;
 	width: 100%;
-	bottom: 140px;
+	bottom: 170px;
 	@include media-max(575) {
 		position: relative;
 		bottom: auto;
